@@ -1,0 +1,68 @@
+$spartan: 'League Spartan', sans-serif;
+$grey500: hsl(0, 0%, 63%);
+
+body{
+    font-family: $spartan;
+}
+
+header{
+    background-image: url("./images/desktop-image-hero-1.jpg");
+}
+
+p{
+    color: $grey500;
+}
+
+ul{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+button{
+    background-color: white;
+    border: none;
+    transition: opacity 0.5s;
+    &:hover{
+        cursor: pointer;
+        opacity: 0.5;
+    }
+}
+
+#mobileMenu{
+    background-color: white;
+}
+
+#mobileMenu a{
+    color: black;
+}
+
+.show{
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+.hide{
+    display: none;
+}
+
+@media(max-width: 70em){
+    #menu{
+       display: none; 
+    }
+}
+
+@media(min-width: 70em){
+    #openMobileMenu, #mobileMenu{
+        display: none;
+    }
+}
