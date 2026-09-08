@@ -40,6 +40,14 @@ button:hover {
   color: black;
 }
 
+#left img, #right img {
+  background-color: black;
+  padding: 1em;
+}
+#left img:hover, #right img:hover {
+  background-color: hsl(0, 0%, 27%);
+}
+
 .show {
   visibility: visible;
   position: fixed;

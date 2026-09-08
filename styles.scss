@@ -1,5 +1,6 @@
 $spartan: 'League Spartan', sans-serif;
 $grey500: hsl(0, 0%, 63%);
+$grey800: hsl(0, 0%, 27%);
 
 body{
     font-family: $spartan;
@@ -41,6 +42,14 @@ button{
 
 #mobileMenu a{
     color: black;
+}
+
+#left img, #right img{
+    background-color: black;
+    padding: 1.0em;
+    &:hover{
+        background-color: $grey800;
+    }
 }
 
 .show{
