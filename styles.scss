@@ -68,6 +68,10 @@ button{
     display: none;
 }
 
+.hidden{
+    display: none;
+}
+
 @media(max-width: 70em){
     #menu{
        display: none; 
