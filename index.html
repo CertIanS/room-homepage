@@ -15,27 +15,30 @@
 <body>
   <main>
     <header>
-      <a href="#" id="openMobileMenu" onclick="openMenu()" aria-label="openMenu"><img src="./images/icon-hamburger.svg" alt="openMenu"/></a>
-      <img src="./images/logo.svg" alt="logo"/>
-      <nav id="menu" aria-label="menu">
-        <ul>
-          <li><a href="#">home</a></li>
-          <li><a href="#">shop</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
-      </nav>
+      <section id="heading">
+        <a href="#" id="openMobileMenu" onclick="openMenu()" aria-label="openMenu"><img src="./images/icon-hamburger.svg" alt="openMenu"/></a>
+        <img src="./images/logo.svg" alt="logo"/>
+        <nav id="menu" aria-label="menu">
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section id="info">
+        <a href="#" id="left"><img src="./images/icon-angle-left.svg" alt="left"/></a>
+        <a href="#" id="right"><img src="./images/icon-angle-right.svg" alt="right"/></a>
+        <h1>Discover innovative ways to decorate</h1>
+        <p>We provide unmatched quality, comfort, and style for property owners across the country. 
+      Our experts combine form and function in bringing your vision to life. Create a room in your 
+      own style with our collection and make your property a reflection of you and what you love.</p>
+        <button type="button"><span>SHOP NOW</span><img src="./images/icon-arrow.svg" alt="arrow"/></button>
+      </section>
     </header>
-    <a href="#" id="left"><img src="./images/icon-angle-left.svg" alt="left"/></a>
-    <a href="#" id="right"><img src="./images/icon-angle-right.svg" alt="right"/></a>
-    <section>
-      <h1>Discover innovative ways to decorate</h1>
-      <p>We provide unmatched quality, comfort, and style for property owners across the country. 
-    Our experts combine form and function in bringing your vision to life. Create a room in your 
-    own style with our collection and make your property a reflection of you and what you love.</p>
-      <button type="button"><span>SHOP NOW</span><img src="./images/icon-arrow.svg" alt="arrow"/></button>
-    </section>
-    <section>
+    
+    <!--<section>
       <h1>We are available all across the globe</h1>
       <p>With stores all over the world, it's easy for you to find furniture for your home or place of business. 
     Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
@@ -48,16 +51,18 @@
     to ensure that every product is made as perfect and as consistent as possible. With three decades of 
     experience in this industry, we understand what customers want for their home and office.</p>
       <button type="button"><span>SHOP NOW</span><img src="./images/icon-arrow.svg" alt="arrow"/></button>
+    </section>-->
+    <section id="aboutInfo">
+      <img src="./images/image-about-dark.jpg" alt="aboutDark"/>
+      <section>
+        <h2>ABOUT OUR FURNITURE</h2>
+        <p>Our multifunctional collection blends design and function to suit your individual taste.
+      Make each room unique, or pick a cohesive theme that best express your interests and what
+      inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+      or anything in between. Product specialists are available to help you create your dream space.</p>
+      </section>
+      <img src="./images/image-about-light.jpg" alt="aboutLight"/>
     </section>
-    <img src="./images/image-about-dark.jpg" alt="aboutDark"/>
-    <section>
-      <h2>ABOUT OUR FURNITURE</h2>
-      <p>Our multifunctional collection blends design and function to suit your individual taste.
-    Make each room unique, or pick a cohesive theme that best express your interests and what
-    inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-    or anything in between. Product specialists are available to help you create your dream space.</p>
-    </section>
-    <img src="./images/image-about-light.jpg" alt="aboutLight"/>
   </main>
   <nav id="mobileMenu" class="hide" aria-label="menu">
     <a href="#" onclick="closeMenu(); return false;" aria-label="closeMenu"><img src="./images/icon-close.svg" alt="closeMenu"/></a>
