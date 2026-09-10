@@ -12,11 +12,13 @@ p{
 
 ul{
     list-style: none;
+    display: inline-flex;
 }
 
 li a{
     text-decoration: none;
     color: white;
+    margin-right: 0.5em;
     &:hover{
         text-decoration: underline;
     }
@@ -38,6 +40,11 @@ button{
     background-size: 100%;
     width: 100%;
     height: 100%;
+    padding-left: 1.0em;
+}
+
+#menu{
+    display: inline-flex;
 }
 
 #mobileMenu{

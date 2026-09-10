@@ -8,11 +8,13 @@ p {
 
 ul {
   list-style: none;
+  display: inline-flex;
 }
 
 li a {
   text-decoration: none;
   color: white;
+  margin-right: 0.5em;
 }
 li a:hover {
   text-decoration: underline;
@@ -34,6 +36,11 @@ button:hover {
   background-size: 100%;
   width: 100%;
   height: 100%;
+  padding-left: 1em;
+}
+
+#menu {
+  display: inline-flex;
 }
 
 #mobileMenu {
