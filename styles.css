@@ -15,9 +15,40 @@ li a {
   text-decoration: none;
   color: white;
   margin-right: 0.5em;
+  position: relative;
 }
-li a:hover {
-  text-decoration: underline;
+li a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: bottom center;
+  transition: transform 0.3s ease-in-out;
+}
+li a:hover::after {
+  transform: scaleX(1);
+}
+
+#mobileMenu a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: bottom center;
+  transition: transform 0.3s ease-in-out;
+}
+#mobileMenu a:hover::after {
+  transform: scaleX(1);
 }
 
 button {
@@ -54,6 +85,7 @@ button:hover {
 #left img, #right img {
   background-color: black;
   padding: 1em;
+  transition: background-color 0.3s ease-in-out;
 }
 #left img:hover, #right img:hover {
   background-color: hsl(0, 0%, 27%);
