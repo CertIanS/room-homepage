@@ -20,24 +20,41 @@ function moveOne(direction){
 }
 
 function changeImage(index){
+    var style = window.getComputedStyle(header, false);
+    var url = "";
+    if(style.backgroundImage.includes('1'))  url = style.backgroundImage.replace("1", index+1);
+    else if(style.backgroundImage.includes('2')) url = style.backgroundImage.replace("2", index+1);
+    else if(style.backgroundImage.includes('3')) url = style.backgroundImage.replace("3", index+1);
+    header.style.backgroundImage = url;
+    console.log(url);
     switch(index){
         case 0:
-            header.style.backgroundImage = "url('./images/desktop-image-hero-1.jpg')";
             document.getElementById("infoOne").style.display = "block";
             document.getElementById("infoTwo").style.display = "none";
             document.getElementById("infoThree").style.display = "none";
             break;
         case 1:
-            header.style.backgroundImage = "url('./images/desktop-image-hero-2.jpg')";
             document.getElementById("infoTwo").style.display = "block";
             document.getElementById("infoOne").style.display = "none";
             document.getElementById("infoThree").style.display = "none";
             break;
         case 2:
-            header.style.backgroundImage = "url('./images/desktop-image-hero-3.jpg')";
             document.getElementById("infoThree").style.display = "block";
             document.getElementById("infoTwo").style.display = "none";
             document.getElementById("infoOne").style.display = "none";
             break;
     }
 }
+
+function switchDesktopMobile(){
+    var style = window.getComputedStyle(header, false);
+    if(window.innerWidth <= 1120){
+        var url = style.backgroundImage.replace("desktop", "mobile");
+        header.style.backgroundImage = url;
+    }else{
+        var url = style.backgroundImage.replace("mobile", "desktop");
+        header.style.backgroundImage = url;
+    }
+}
+
+window.onresize = switchDesktopMobile;
