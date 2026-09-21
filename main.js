@@ -26,7 +26,6 @@ function changeImage(index){
     else if(style.backgroundImage.includes('2')) url = style.backgroundImage.replace("2", index+1);
     else if(style.backgroundImage.includes('3')) url = style.backgroundImage.replace("3", index+1);
     header.style.backgroundImage = url;
-    console.log(url);
     switch(index){
         case 0:
             document.getElementById("infoOne").style.display = "block";

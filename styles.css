@@ -34,27 +34,13 @@ li a:hover::after {
   transform: scaleX(1);
 }
 
-#mobileMenu a::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: black;
-  transform: scaleX(0);
-  transform-origin: bottom center;
-  transition: transform 0.3s ease-in-out;
-}
-#mobileMenu a:hover::after {
-  transform: scaleX(1);
-}
-
 button {
   background-color: white;
   border: none;
   transition: opacity 0.5s;
+}
+button span {
+  font-weight: bold;
 }
 button:hover {
   cursor: pointer;
@@ -77,6 +63,22 @@ button:hover {
 
 #mobileMenu a {
   color: black;
+}
+#mobileMenu a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: bottom center;
+  transition: transform 0.3s ease-in-out;
+}
+#mobileMenu a:hover::after {
+  transform: scaleX(1);
 }
 
 #left img, #right img {
@@ -105,10 +107,14 @@ button:hover {
 }
 
 @media (max-width: 70em) {
+  #aboutInfo img {
+    width: 100%;
+  }
   #menu {
     display: none;
   }
   #heading {
+    width: 100%;
     height: 30em;
     background-image: url("./images/mobile-image-hero-1.jpg");
     background-repeat: no-repeat;
@@ -118,12 +124,13 @@ button:hover {
 @media (min-width: 70em) {
   header {
     display: inline-flex;
-    height: 30em;
+    padding-bottom: 0;
   }
   #heading {
     background-image: url("./images/desktop-image-hero-1.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% auto;
+    height: 27.5em;
   }
   #aboutInfo {
     display: flex;
