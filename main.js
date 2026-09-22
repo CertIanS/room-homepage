@@ -22,25 +22,37 @@ function moveOne(direction){
 function changeImage(index){
     var style = window.getComputedStyle(header, false);
     var url = "";
-    if(style.backgroundImage.includes('1'))  url = style.backgroundImage.replace("1", index+1);
-    else if(style.backgroundImage.includes('2')) url = style.backgroundImage.replace("2", index+1);
-    else if(style.backgroundImage.includes('3')) url = style.backgroundImage.replace("3", index+1);
+    if(style.backgroundImage.includes('1')){
+        url = style.backgroundImage.replace("1", index+1);
+    }
+    else if(style.backgroundImage.includes('2')){
+        url = style.backgroundImage.replace("2", index+1);
+    } 
+    else if(style.backgroundImage.includes('3')){
+        url = style.backgroundImage.replace("3", index+1);
+    } 
     header.style.backgroundImage = url;
     switch(index){
         case 0:
             document.getElementById("infoOne").style.display = "block";
             document.getElementById("infoTwo").style.display = "none";
             document.getElementById("infoThree").style.display = "none";
+            document.getElementById("headImage").src = document.getElementById("headImage").src.replace("2", "1");
+            document.getElementById("headImage").src = document.getElementById("headImage").src.replace("3", "1");
             break;
         case 1:
             document.getElementById("infoTwo").style.display = "block";
             document.getElementById("infoOne").style.display = "none";
             document.getElementById("infoThree").style.display = "none";
+            document.getElementById("headImage").src = document.getElementById("headImage").src.replace("1", "2");
+            document.getElementById("headImage").src = document.getElementById("headImage").src.replace("3", "2");
             break;
         case 2:
             document.getElementById("infoThree").style.display = "block";
             document.getElementById("infoTwo").style.display = "none";
             document.getElementById("infoOne").style.display = "none";
+            document.getElementById("headImage").src = document.getElementById("headImage").src.replace("2", "3");
+            document.getElementById("headImage").src = document.getElementById("headImage").src.replace("1", "3");
             break;
     }
 }
@@ -49,9 +61,11 @@ function switchDesktopMobile(){
     var style = window.getComputedStyle(header, false);
     if(window.innerWidth <= 1120){
         var url = style.backgroundImage.replace("desktop", "mobile");
+        document.getElementById("headImage").src = document.getElementById("headImage").src.replace("desktop", "mobile");
         header.style.backgroundImage = url;
     }else{
         var url = style.backgroundImage.replace("mobile", "desktop");
+        document.getElementById("headImage").src = document.getElementById("headImage").src.replace("mobile", "desktop");
         header.style.backgroundImage = url;
     }
 }
