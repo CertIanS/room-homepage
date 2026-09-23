@@ -50,7 +50,18 @@ button:hover {
 #heading {
   width: 100%;
   height: 100%;
-  padding-left: 1em;
+}
+
+#headingText {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 25px;
+}
+
+#headImage {
+  position: relative;
+  text-align: center;
 }
 
 #menu {
@@ -90,6 +101,10 @@ button:hover {
   background-color: hsl(0, 0%, 27%);
 }
 
+#info section, #info button, #aboutInfo section {
+  padding: 1em;
+}
+
 .show {
   visibility: visible;
   position: fixed;
@@ -107,30 +122,17 @@ button:hover {
 }
 
 @media (max-width: 70em) {
-  #aboutInfo img {
-    width: 100%;
-  }
   #menu {
     display: none;
   }
-  #heading {
-    width: 100%;
-    height: 30em;
-    /*background-image: url("./images/mobile-image-hero-1.jpg");
-    background-repeat: no-repeat;
-    background-size: 50%;*/
+  #roomLogo {
+    padding-left: 5em;
   }
 }
 @media (min-width: 70em) {
   header {
     display: inline-flex;
     padding-bottom: 0;
-  }
-  #heading {
-    /*background-image: url("./images/desktop-image-hero-1.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;*/
-    height: 27.5em;
   }
   #aboutInfo {
     display: flex;
