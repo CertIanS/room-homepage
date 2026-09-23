@@ -70,4 +70,7 @@ function switchDesktopMobile(){
     }
 }
 
+if(window.innerWidth <= 1120){
+    document.getElementById("headImage").src = "./images/mobile-image-hero-1.jpg";
+}
 window.onresize = switchDesktopMobile;

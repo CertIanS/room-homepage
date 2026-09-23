@@ -101,7 +101,11 @@ button:hover {
   background-color: hsl(0, 0%, 27%);
 }
 
-#info section, #info button, #aboutInfo section {
+#info {
+  position: relative;
+}
+
+#infoOne, #infoTwo, #infoThree, #info button, #aboutInfo section {
   padding: 1em;
 }
 
@@ -133,6 +137,10 @@ button:hover {
   header {
     display: inline-flex;
     padding-bottom: 0;
+  }
+  #movePics {
+    position: absolute;
+    bottom: 0;
   }
   #aboutInfo {
     display: flex;
