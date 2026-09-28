@@ -29,6 +29,11 @@
             </ul>
           </nav>
         </section>
+        <section id="mobileArrows">
+          <a href="#" id="leftMobile" onclick="moveOne(-1)"><img src="./images/icon-angle-left.svg" alt="left"/></a>
+          <a href="#" id="rightMobile" onclick="moveOne(1)"><img src="./images/icon-angle-right.svg" alt="right"/></a>
+        </section>
+        
       </section>
       <section id="info">
         <section id="infoOne">
@@ -69,7 +74,7 @@
     </section>
   </main>
   <nav id="mobileMenu" class="hide" aria-label="menu">
-    <a href="#" onclick="closeMenu(); return false;" aria-label="closeMenu"><img src="./images/icon-close.svg" alt="closeMenu"/></a>
+    <a href="#" id="closeMenu" onclick="closeMenu(); return false;" aria-label="closeMenu"><img src="./images/icon-close.svg" alt="closeMenu"/></a>
     <ul>
       <li><a href="#"><b>home</b></a></li>
       <li><a href="#"><b>shop</b></a></li>

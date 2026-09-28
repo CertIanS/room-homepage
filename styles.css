@@ -57,6 +57,7 @@ button:hover {
   position: absolute;
   top: 10px;
   left: 25px;
+  padding-top: 1em;
 }
 
 #headImage {
@@ -70,12 +71,16 @@ button:hover {
 
 #mobileMenu {
   background-color: white;
+  width: 100%;
+  height: 20%;
 }
-
 #mobileMenu a {
+  margin-left: 3em;
+}
+#mobileMenu li a {
   color: black;
 }
-#mobileMenu a::after {
+#mobileMenu li a::after {
   content: "";
   position: absolute;
   display: block;
@@ -88,16 +93,16 @@ button:hover {
   transform-origin: bottom center;
   transition: transform 0.3s ease-in-out;
 }
-#mobileMenu a:hover::after {
+#mobileMenu li a:hover::after {
   transform: scaleX(1);
 }
 
-#left img, #right img {
+#left img, #right img, #leftMobile img, #rightMobile img {
   background-color: black;
   padding: 1em;
   transition: background-color 0.3s ease-in-out;
 }
-#left img:hover, #right img:hover {
+#left img:hover, #right img:hover, #leftMobile img:hover, #rightMobile img:hover {
   background-color: hsl(0, 0%, 27%);
 }
 
@@ -115,22 +120,25 @@ button:hover {
   top: 0;
   left: 0;
   height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .hide {
   display: none;
 }
 
-.hidden {
-  display: none;
-}
-
 @media (max-width: 70em) {
-  #menu {
+  #menu, #left, #right {
     display: none;
   }
   #roomLogo {
     padding-left: 5em;
+  }
+  #mobileArrows {
+    position: absolute;
+    top: 312px;
+    float: right;
   }
 }
 @media (min-width: 70em) {
@@ -145,7 +153,7 @@ button:hover {
   #aboutInfo {
     display: flex;
   }
-  #openMobileMenu, #mobileMenu {
+  #openMobileMenu, #mobileMenu, #mobileArrows {
     display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
