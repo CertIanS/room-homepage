@@ -137,8 +137,11 @@ button:hover {
   }
   #mobileArrows {
     position: absolute;
-    top: 312px;
-    float: right;
+    margin-top: -59px;
+    right: 7px;
+  }
+  #aboutInfo img, #headImage {
+    width: 100%;
   }
 }
 @media (min-width: 70em) {
