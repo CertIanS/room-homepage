@@ -2,8 +2,13 @@ body {
   font-family: "League Spartan", sans-serif;
 }
 
+h4 {
+  letter-spacing: 0.5em;
+}
+
 p {
   color: hsl(0, 0%, 63%);
+  line-height: 1.3em;
 }
 
 ul {
@@ -41,6 +46,7 @@ button {
 }
 button span {
   font-weight: bold;
+  letter-spacing: 7px;
 }
 button:hover {
   cursor: pointer;
@@ -99,7 +105,7 @@ button:hover {
 
 #left img, #right img, #leftMobile img, #rightMobile img {
   background-color: black;
-  padding: 1em;
+  padding: 1.5em;
   transition: background-color 0.3s ease-in-out;
 }
 #left img:hover, #right img:hover, #leftMobile img:hover, #rightMobile img:hover {
@@ -108,10 +114,12 @@ button:hover {
 
 #info {
   position: relative;
+  padding-top: 6em;
 }
 
 #infoOne, #infoTwo, #infoThree, #info button, #aboutInfo section {
-  padding: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .show {
