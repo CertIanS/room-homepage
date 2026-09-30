@@ -150,6 +150,12 @@ button{
     #aboutInfo img, #headImage{
         width: 100%;
     }
+
+    .grey{
+        pointer-events: none;
+        background-color: rgba(0, 0, 0, 0.5);
+        filter: brightness(50%);
+    }
 }
 
 @media(min-width: 70em){
