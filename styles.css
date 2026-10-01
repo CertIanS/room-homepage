@@ -174,8 +174,17 @@ button:hover {
     position: absolute;
     bottom: 0;
   }
+  #info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+  }
   #aboutInfo {
     display: flex;
+  }
+  #aboutInfo section {
+    padding-top: 3em;
   }
   #openMobileMenu, #mobileMenu, #mobileArrows {
     display: none;
