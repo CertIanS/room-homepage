@@ -50,6 +50,7 @@ button{
     span{
         font-weight: bold;
         letter-spacing: 7px;
+        padding-right: 1.0em;
     }
     &:hover{
         cursor: pointer;
@@ -63,10 +64,9 @@ button{
 }
 
 #headingText{
-    display: inline-block;
     position: absolute;
     top: 30px;
-    left: 70px;
+    padding-left: 3.0em;
     padding-top: 1.0em;
 }
 
@@ -143,6 +143,16 @@ button{
 }
 
 @media(max-width: 70em){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main{
+        max-width: 550px;
+    }
+
     #heading{
         max-width: 525px;
     }
@@ -152,7 +162,7 @@ button{
     }
 
     #roomLogo{
-        padding-left: 5.0em;
+        padding-left: 4.0em;
     }
 
     #mobileArrows{
@@ -187,11 +197,8 @@ button{
         bottom: 0;
     }
 
-    #info{
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        align-content: space-evenly;
+    #infoOne, #infoTwo, #infoThree{
+        padding-top: 3.5em;
     }
 
     #aboutInfo{
