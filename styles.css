@@ -157,7 +157,7 @@ button:hover {
   #menu, #left, #right {
     display: none;
   }
-  #info button {
+  #shopNow {
     margin-bottom: 3em;
   }
   #roomLogo {
@@ -194,7 +194,7 @@ button:hover {
     padding-left: 1em;
     padding-right: 1em;
   }
-  #info button {
+  #shopNow {
     margin-left: 1em;
     margin-top: 1.5em;
   }
@@ -216,7 +216,7 @@ button:hover {
     padding-left: 4.5em;
     padding-right: 4.5em;
   }
-  #info button {
+  #shopNow {
     margin-left: 5em;
   }
   #aboutInfo section {
