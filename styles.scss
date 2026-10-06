@@ -6,6 +6,10 @@ body{
     font-family: $spartan;
 }
 
+h1{
+    font-size: 40px;
+}
+
 h4{
     letter-spacing: 0.5em;
 }
@@ -123,9 +127,9 @@ button{
     position: relative;
 }
 
-#infoOne, #infoTwo, #infoThree, #info button, #aboutInfo section{
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+#aboutInfo section{
+    padding-left: 2.5em;
+    padding-right: 2.5em;
 }
 
 .show{
@@ -159,6 +163,10 @@ button{
 
     #menu, #left, #right{
        display: none; 
+    }
+
+    #info button{
+        margin-bottom: 3.0em;
     }
 
     #roomLogo{
@@ -198,17 +206,44 @@ button{
     }
 
     #infoOne, #infoTwo, #infoThree{
-        padding-top: 3.5em;
+        padding-top: 0.5em;
+        padding-left: 1.0em;
+        padding-right: 1.0em;
+    }
+
+    #info button{
+        margin-left: 1.0em;
+        margin-top: 1.5em;
     }
 
     #aboutInfo{
         display: flex;
         section{
-            padding-top: 3.0em;
+            padding-top: 1.0em;
+            padding-left: 1.0em;
+            padding-right: 1.0em;
         }
     }
 
     #openMobileMenu, #mobileMenu, #mobileArrows{
         display: none;
+    }
+}
+
+@media (min-width: 80em){
+    #infoOne, #infoTwo, #infoThree{
+        padding-top: 3.5em;
+        padding-left: 4.5em;
+        padding-right: 4.5em;
+    }
+
+    #info button{
+        margin-left: 5.0em;
+    }
+
+    #aboutInfo section{
+        padding-top: 3.0em;
+        padding-left: 2.5em;
+        padding-right: 2.5em;
     }
 }
